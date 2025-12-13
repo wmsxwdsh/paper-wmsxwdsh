@@ -1,0 +1,18 @@
+{
+  // 自动更新
+  "update.mode": "manual",
+  // 缩略图
+  "editor.minimap.enabled": false,
+  // 启动页
+  "workbench.startupEditor": "none",
+  // 光标所在的变量自动高亮
+  "editor.occurrencesHighlight": "off",
+  // 双击选中内容时不要带上括号
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?【】",
+  // 编辑器字号
+  "editor.fontSize": 16,
+  "git.openRepositoryInParentFolders": "always",
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open"
+}
