@@ -42,6 +42,8 @@
 /* #placesContext_pasteSeparator,                 /************* Separator *************/
 /* #placesContext_createBookmark,                 /* Bookmark Page…                    */
 /* #placesContext_showAllBookmarks,               /* Manage Bookmarks                  */
+.bookmarks-actions-menuseparator,   /* 书签栏文件夹里“全部打开”上面的分割线  */
+.openintabs-menuitem,               /* 书签栏文件夹里“全部打开”  */
 
 #leave_this_dummy_here
     { display:none !important; }
