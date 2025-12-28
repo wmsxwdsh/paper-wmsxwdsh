@@ -1,0 +1,49 @@
+/*AGENT_SHEET*/
+
+/************************************/
+/****** simpleMenuWizard START ******/
+
+/**********************************************
+   Modify these files themselves to your needs.
+   Do not modify the following @import block.
+   **********************************************/
+
+/* liuzg #开头是删除，/*开头是留下。 */
+/*** When right-clicking on... ***/
+@import url("./simpleMenuWizard/blank-context.css");      /* ...在页面的空白区域右击   */
+@import url("./simpleMenuWizard/frame-context.css");      /* ...an iframe                                      */
+@import url("./simpleMenuWizard/image-context.css");      /* ...图片右键             */
+@import url("./simpleMenuWizard/input-context.css");      /* ...an input-field                                 */
+@import url("./simpleMenuWizard/link-context.css");       /* ...超链接右键   */
+@import url("./simpleMenuWizard/main-hamburger.css");     /* Leftclick on the hamburger menu on top right      */
+@import url("./simpleMenuWizard/media-context.css");      /* ...视频上右键   */
+@import url("./simpleMenuWizard/main-menubar.css");       /* Leftclick on the main menubar (open with ALT key) */
+@import url("./simpleMenuWizard/newtab-containers.css");  /* ...the plus sign to open a new tab or container   */
+@import url("./simpleMenuWizard/select-context.css");     /* ...文字选中右键 */
+@import url("./simpleMenuWizard/sidebar-context.css");    /* ...书签上右键     */
+@import url("./simpleMenuWizard/sidebar-header.css");     /* Leftclick on the sidebar header                   */
+@import url("./simpleMenuWizard/source-context.css");     /* ...a blank area when viewing source code          */
+@import url("./simpleMenuWizard/tab-context.css");        /* ...标签页右键      */
+@import url("./simpleMenuWizard/toolbar-context.css");    /* ...the toolbar or tabbar                          */
+@import url("./simpleMenuWizard/urlbar-context.css");     /* ...the addressbar                                 */
+@import url("./simpleMenuWizard/opt_noSendToDevice.css");          /* 发送到设备（不管用）*/                            
+@import url("./simpleMenuWizard/floating_findbar_on_top.css");     /* 搜索框位置 */ 
+@import url("./simpleMenuWizard/tab_animated_active_border.css");  /* 活动标签页的周围创建彩色动画边框 */
+
+
+/*** Options ***/
+
+/**********************************************************
+   How to activate or deactivate the following options:
+   Remove '/*' at the beginning of a line (not comment line) to activate the option
+   Add '/*' at the beginning of the line (not comment line) to deactivate the option
+   **********************************************************/
+
+/*** Hide all "Send <item> to Device" entries ***/
+/* @import url("./simpleMenuWizard/opt_noSendToDevice.css");
+
+/*** Hide all inactive menu items ***/
+/* #mainPopupSet menuitem[disabled="true"][id][data-l10n-id] { display: none !important; }
+
+/****** simpleMenuWizard END ******/
+/**********************************/

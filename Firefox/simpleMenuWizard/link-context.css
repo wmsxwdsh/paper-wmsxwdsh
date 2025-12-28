@@ -1,0 +1,35 @@
+/*AGENT_SHEET*/
+
+/*********************************************************************************************
+  simpleMenuWizard: userChrome.css tweaks to remove context menu items in Firefox.
+  https://github.com/stonecrusher/simpleMenuWizard
+**********************************************************************************************
+
+/*** link-context.css ***/
+/*** When right-clicking on a link ***/
+
+/* #context-openlinkintab,                 /* Open Link in New Tab             */
+#context-openlinkinusercontext-menu,       /* 新疆身份标签页打开链接   */
+#context-openlink,                         /* 新建窗口打开链接        */
+#context-openlinkprivate,                  /* 新建隐私窗口打开链接     */
+#context-previewlink,                      /* 预览链接     */
+/* #context-sep-open,                      /************ Separator *************/
+#context-bookmarklink,                     /* 为链接添加书签          */
+#context-savelink,                         /* 从链接文件另存为                   */
+#context-savelinktopocket,                 /* Save Link to Pocket              */
+#context-inspect-a11y                      /* 检查无障碍环境属性                  */
+/* #context-copyemail,                     /* Copy Email Address               */
+/* #context-copylink,                      /* Copy Link                        */
+/* #context-stripOnShareLink,              /* Copy Link Without Site Tracking  */
+#context-sendlinktodevice,              /* Send Link to Device              */
+/* #context-sep-sendlinktodevice,          /************ Separator *************/
+/* #context-sep-copylink,                  /************ Separator *************/
+/* #context-searchselect,                  /* Search [Google] for "[selected]" */
+/* #frame-sep,                             /************ Separator *************/
+/* #context-inspect,                       /* Inspect (Q)                      */
+
+#leave_this_dummy_here
+    { display:none !important; }
+#context-inspect-a11y + menuseparator {
+  display: none !important;
+}
