@@ -25,7 +25,7 @@
 @import url("./simpleMenuWizard/source-context.css");     /* ...a blank area when viewing source code          */
 @import url("./simpleMenuWizard/tab-context.css");        /* ...标签页右键      */
 @import url("./simpleMenuWizard/toolbar-context.css");    /* ...the toolbar or tabbar                          */
-@import url("./simpleMenuWizard/urlbar-context.css");     /* ...the addressbar                                 */
+@import url("./simpleMenuWizard/urlbar-context.css");     /* ...地址栏地址上右键         */
 @import url("./simpleMenuWizard/opt_noSendToDevice.css");          /* 发送到设备（不管用）*/                            
 @import url("./simpleMenuWizard/floating_findbar_on_top.css");     /* 搜索框位置 */ 
 @import url("./simpleMenuWizard/tab_animated_active_border.css");  /* 活动标签页的周围创建彩色动画边框 */
