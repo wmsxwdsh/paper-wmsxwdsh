@@ -9,8 +9,10 @@
 [ChinaMap2.jpg](images/map-China/ChinaMap2.jpg) <br>
 [ChinaMapTW.png](https://zh.wikipedia.org/zh-cn/File:Map_of_PRC_with_province_names_zh-tw.svg) <br>
 
-2、其他 <br>
-
+2、相关配置 <br>
+Firefox自定义 <br>
+sublime <br>
+vscode <br>
 
 
 
