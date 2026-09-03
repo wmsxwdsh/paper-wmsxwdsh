@@ -9,10 +9,12 @@
 /*** When right-clicking on a tab ***/
 /* liuzg #开头是删除，/*开头是留下。 */
 
-/* #tabContextMenu #context_openANewTab,                      /* New Tab                 */
+/* #tabContextMenu #context_openANewTab,                   /* New Tab                 */
 #tabContextMenu #context_moveTabToNewGroup,                /* Add Tab to New Group    */
 #tabContextMenu #context_moveTabToGroup,                   /* Add Tab to Group        */
 #tabContextMenu #context_ungroupTab,                       /* Remove from Group       */
+#tabContextMenu #context_moveTabToSplitView,               /* 添加分屏 */
+#tabContextMenu #context_context_separateSplitView,        /* 解锁分屏 */
 /* #tabContextMenu #context_ungroupTab + menuseparator,       /******** Separator ********/
 #tabContextMenu #context_reloadTab,                        /* Reload Tab              */
 #tabContextMenu #context_reloadSelectedTabs,               /* Reload Tabs             */
@@ -22,11 +24,11 @@
 /* #tabContextMenu #context_toggleMuteSelectedTabs,           /* Mute / Unmute Tabs      */
 .share-tab-url-item,                                       /* 共享      */
 #tabContextMenu #context_unloadTab,                        /* Unload Tab              */
-/* #tabContextMenu #context_pinTab,                           /* Pin Tab                 */
-/* #tabContextMenu #context_unpinTab,                         /* Unpin Tab               */
-/* #tabContextMenu #context_pinSelectedTabs,                  /* Pin Tabs                */
-/* #tabContextMenu #context_unpinSelectedTabs,                /* Unpin Tabs              */
-#tabContextMenu #context_duplicateTab,                     /* Duplicate Tab           */
+#tabContextMenu #context_pinTab,                           /* 固定标签页                 */
+#tabContextMenu #context_unpinTab,                         /* 取消固定标签页              */
+#tabContextMenu #context_pinSelectedTabs,                  /* Pin Tabs                */
+#tabContextMenu #context_unpinSelectedTabs,                /* Unpin Tabs              */
+/* tabContextMenu #context_duplicateTab,                   /* 克隆标签页                */
 #tabContextMenu #context_duplicateTabs,                    /* Duplicate Tabs          */
 #tabContextMenu #context_duplicateTabs + menuseparator,    /******** Separator ********/
 #tabContextMenu #context_bookmarkSelectedTabs,             /* Bookmark Tabs…          */
