@@ -1,0 +1,9 @@
+
+
+ytd-rich-grid-renderer {
+    --ytd-rich-grid-items-per-row: 8 !important;
+}
+
+把上面的代码，放到 YouTube增强插件 的 “自定义主题“ 下面。
+
+参考：https://cloud.tencent.com/developer/ask/sof/116143176
