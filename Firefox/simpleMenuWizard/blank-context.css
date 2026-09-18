@@ -9,8 +9,8 @@
 /*** When right-clicking on a blank area on a webpage ***/
 
 /* #context-navigation,             /* Hide whole navigation bar            */
-#context-back,                     /* Navi: Back arrow                     */
-#context-forward,                  /* Navi: Forward arrow                  */
+#context-back,                     /* Navi: Back arrow 后退                   */
+#context-forward,                  /* Navi: Forward arrow 前进                */
 /* #context-reload,                   /* Navi: Reload icon - 
                                            combined position with stop icon   */
 /* #context-stop,                     /* Navi: Stop icon (x) - 
@@ -24,9 +24,17 @@
 #context-take-screenshot,        /* Take Screenshot                      */
 #context-sep-screenshots,        /************** Separator ***************/
 #context-viewsource,             /* View Page Source                     */
-/* #context-inspect,                /* Inspect (Q)                          */
+/* #context-inspect,                /* Inspect (Q)  检查                 */
 /* #context-media-eme-separator,    /************** Separator ***************/
 /* Here are context menus of addons */
+#contentAreaContextMenu menu[id="downie_charliemonroe_net-menuitem-0"],   /* Downie 下载软件  */
 
+/*  
+ * #contentAreaContextMenu 是上层元素的 id
+ *
+ * 本人最后调整 2026-09-19
+ */
+
+ 
 #leave_this_dummy_here
     { display:none !important; }

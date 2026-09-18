@@ -1,9 +1,9 @@
 # 修改最近一次提交的说明
-git commit --amend -m ''
+q
 # 会先检查远程有没有别人更新过，避免覆盖他人提交
 git push --force-with-lease
 
 # 显示最近的提交
-git log
-git log --oneline
-git log --pretty=oneline
+git log（按 q 退出）
+git log --oneline（以一行的简洁方式显示，commit号缩短）
+git log --pretty=oneline（以一行的简洁方式显示，commit号完整）

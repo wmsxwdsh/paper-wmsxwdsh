@@ -7,20 +7,26 @@
 
 /*** urlbar-context.css ***/
 /*** When right-clicking on the addressbar ***/
+/* liuzg #开头是删除，/*开头是留下。 */
 
-#urlbar menuitem[cmd="cmd_undo"],                    /* 撤销                       */
-#urlbar menuitem[cmd="cmd_redo"],                    /* 重做                        */
-#urlbar menuitem[cmd="cmd_redo"] + menuseparator,    /* Separator                   */
-#urlbar menuitem[cmd="cmd_cut"],                     /* Cut                         */
-/* #urlbar menuitem[cmd="cmd_copy"],                    /* Copy                        */
-#urlbar menuitem[id="strip-on-share"],               /* Copy Without Site Tracking  */
-/* #urlbar menuitem[cmd="cmd_paste"],                   /* Paste                       */
-/* #urlbar menuitem[anonid="paste-and-go"],             /* Paste and Go                */
-#urlbar menuitem[cmd="cmd_delete"],                  /* Delete                      */
-#urlbar menuitem[cmd="cmd_selectAll"],               /* Select All                  */
-/* menuseparator.menuseparator-add-engine,              /********* Separator ***********/
-/* #urlbar menuitem[class$="context-menu-add-engine"],  /* 'Add search engine' entries */
+#textbox-contextmenu menuitem[command="cmd_undo"],          /* Undo 撤销                   */
+#textbox-contextmenu menuitem[command="cmd_redo"],          /* Redo 重做                   */
+#textbox-contextmenu menuitem[command="cmd_redo"] + menuseparator,    /********* Separator ***********/
+#textbox-contextmenu menuitem[command="cmd_cut"],           /* Cut 剪贴                    */
+/* #textbox-contextmenu menuitem[command="cmd_copy"],       /* Copy 复制                   */
+/* #textbox-contextmenu menuitem[id="strip-on-share"],      /* Copy Without Site Tracking 复制无跟踪参数链接 */
+/* #textbox-contextmenu menuitem[command="cmd_paste"],      /* Paste 粘贴                  */
+/* #textbox-contextmenu menuitem[anonid="paste-and-go"],    /* Paste and Go 粘贴并前往      */
+#textbox-contextmenu menuitem[command="cmd_delete"],        /* Delete 删除                 */
+#textbox-contextmenu menuitem[command="cmd_selectAll"],     /* Select All 全选             */
+#textbox-contextmenu menuitem[anonid="urlbar-input-remove-from-history"] + menuseparator,  /********* Separator ***********/
+#textbox-contextmenu menuitem[class$="context-menu-add-engine"],  /* 'Add search engine' entries 添加搜索引擎“GitHub” */
 
+/*  
+ * #textbox-contextmenu 是上层元素的 id
+ *
+ * 本人最后调整 2026-09-19
+ */
 
 
 #leave_this_dummy_here

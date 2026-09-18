@@ -11,13 +11,14 @@ See the above repository for updates as well as full license text. */
 /* liuzg 参考
  * 解决问题的贴子：
  * https://www.reddit.com/r/FirefoxCSS/comments/13d2eq4/move_findbar_on_top_in_firefox_113/?tl=zh-hans
- * 贴子里用的css：
+ *
+ * 贴子里用的css（最后更新于 2026-09-08）
  * https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/floating_findbar_on_top.css
+ * 
  */
 
-findbar {
+findbar{
   order: -1;
-  margin-bottom: -33px;
   position: relative;
   border-top: none !important;
   padding: 0 !important;
@@ -26,27 +27,29 @@ findbar {
   pointer-events: none;
   z-index: 1;
   white-space: nowrap;
+  grid-area: notificationbox !important;
+  margin-bottom: calc(0px - var(--findbar-height,34px));
 }
 
-.findbar-container>.findbar-find-fast {
-  padding: var(--toolbarbutton-inner-padding) 1px;
+.findbar-container > .findbar-find-fast{
+  padding: var(--toolbarbutton-padding-inner,var(--toolbarbutton-inner-padding)) 1px;
   margin: 0 !important;
 }
 
-findbar[hidden] {
-  transform: translateY(-30px);
-}
+findbar[hidden]{ transform: translateY(-30px);}
 
-findbar>.findbar-container,
-findbar>.close-icon {
+findbar > .findbar-container,
+findbar > .close-icon{
   border: 1px solid var(--chrome-content-separator-color);
   border-width: 0 0 1px 0px;
-  background-color: var(--lwt-accent-color, var(--toolbox-bgcolor)) !important;
-  background-image: linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none);
+  background-color: var(--lwt-accent-color,var(--toolbox-background-color,var(--toolbox-bgcolor))) !important;
+  background-image: linear-gradient(var(--toolbar-background-color,var(--toolbar-bgcolor))),var(--lwt-header-image,none);
   pointer-events: auto;
 }
-
-findbar>.findbar-container {
+.findbar-closebutton{
+  border-bottom-color: var(--chrome-content-separator-color) !important;
+}
+findbar > .findbar-container{
   border-bottom-right-radius: 4px;
   border-right-width: 1px;
   height: initial !important;
@@ -54,57 +57,61 @@ findbar>.findbar-container {
   overflow-inline: visible !important;
 }
 
-.findbar-find-status {
+.findbar-find-status{
   display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
 }
-
-.findbar-closebutton {
+ 
+.findbar-closebutton{
   margin: 0 !important;
   border-radius: 0 !important;
   padding: 5px !important;
   width: initial !important;
   order: -1;
 }
-
-.findbar-closebutton>image {
-  padding: 3px
-}
-
-.findbar-closebutton:hover>image {
-  background: var(--toolbarbutton-hover-background) !important;
+.findbar-closebutton > image{ padding: 3px }
+.findbar-closebutton:hover > image{
+  background: var(--toolbarbutton-background-color-hover,var(--toolbarbutton-hover-background)) !important;
   border-radius: 4px
 }
-
-findbar>.findbar-container>hbox {
-  margin: 0 5px
-}
-
-findbar::after {
-  content: "";
+findbar > .findbar-container > hbox{ margin: 0 5px }
+ 
+findbar::after{
+  content:"";
   display: flex;
   flex-grow: 100;
-}
+} 
 
-
-findbar {
-  /* 
-  * row 搜索框在左上角，搜索文字框在左。
-  * row-reverse 搜索框在右上角，搜索文字框在左。
-  */
+findbar{
   flex-direction: row;
 }
-/* 
-findbar>.findbar-container {
-  flex-direction: row; 
+findbar > .findbar-container{
+  flex-direction: row;
   border-inline-width: 1px 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 4px;
-} */
-
+}
+/*
+Move findbar so it isn't over the scrollbar
+Delete if you want findbar to begin from right window edge
+*/
 findbar{
-  margin-left: 45%;   /* 45% 或 20px */
+  margin-left: 20%;
   border-right: 1px solid var(--chrome-content-separator-color);
 }
+
+
+/*
+ * 1、flex-direction
+ * 都是 row - 搜索框在左上角，搜索文字框在左。
+ * 都是 row-reverse - 搜索框在右上角，搜索文字框在右。
+ * 上 row-reverse，下 row - 搜索框在右上角，搜索文字框在左。
+ * flex-direction: row;
+ *
+ * 2、最后一个 findbar
+ * margin-left（右外边距）改成：大约 20% 或 250px 
+ * 
+ * 本人更后调整 2026-09-19
+ */
